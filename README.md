@@ -114,6 +114,4 @@ For questions, reach out via [GitHub Issues](https://github.com/reuben-idan/alx_
 
 ---
 
-## 🌟 Sleek Description
 
-> **ALX Python Backend** is a curated, industry-grade suite of Python backend projects and utilities, designed to foster robust backend skills through real-world challenges and modern best practices. Dive in to accelerate your backend mastery with scalable code, thorough testing, and professional documentation.
