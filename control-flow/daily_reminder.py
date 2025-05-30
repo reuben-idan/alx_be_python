@@ -1,14 +1,15 @@
 # daily_reminder.py
 
-# Get user input
+# Prompt user for inputs
 task = input("Enter your task: ").strip()
 priority = input("Priority (high/medium/low): ").lower().strip()
 time_bound = input("Is it time-bound? (yes/no): ").lower().strip()
 
-# Validate inputs
+# Valid input sets for validation
 valid_priorities = {"high", "medium", "low"}
 valid_time_bound = {"yes", "no"}
 
+# Validate inputs before processing
 if not task:
     print("Task description cannot be empty.")
 elif priority not in valid_priorities:
@@ -16,8 +17,7 @@ elif priority not in valid_priorities:
 elif time_bound not in valid_time_bound:
     print("Invalid input for time-bound. Please enter yes or no.")
 else:
-    # Inputs are valid - Provide Customized Reminder
-    # Check for immediate action based on time sensitivity
+    # Inputs valid: provide customized reminder based on priority and time sensitivity
     match priority:
         case "high":
             if time_bound == "yes":
@@ -33,4 +33,4 @@ else:
             if time_bound == "yes":
                 print(f"\nReminder: '{task}' is a low priority task, but it's time-bound. Don’t let it slip!")
             else:
-                print(f"\nNote: '{task}' is a low priority task. Consider completing it when you have free time.")
+                print(f"\nReminder: '{task}' is a low priority task. Consider completing it when you have free time.")
